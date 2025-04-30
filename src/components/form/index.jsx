@@ -16,6 +16,7 @@ const SupervisorForm = () => {
         <div className="form">
           <div className="formd">
             <input
+              className="input"
               name="firstName"
               placeholder="First Name"
               value={formData.firstName}
@@ -24,47 +25,44 @@ const SupervisorForm = () => {
             {errors.firstName && <p className="error">{errors.firstName}</p>}
             <h4>How would you prefer to be notified?</h4>
             <div className="input-checkbox-wrapeer">
-
-            <input
-              name="lastName"
-              type="checkbox"
-              onChange={handleChange}
-            />
-            <label>Email</label>
-            <input
-              name="email"
-              placeholder="Email (optional)"
-              value={formData.email}
-              onChange={handleChange}
-            />
+              <div className="label">
+              <input name="lastName" type="checkbox" onChange={handleChange} />
+              <label>Email</label>
+              </div>
+              
+              <input
+                className="input"
+                name="email"
+                placeholder="Email (optional)"
+                value={formData.email}
+                onChange={handleChange}
+              />
             </div>
-            
           </div>
 
           <div className="formd2">
-            
-          {errors.lastName && <p className="error">{errors.lastName}</p>}
+            {errors.lastName && <p className="error">{errors.lastName}</p>}
             <input
+              className="input"
               name="lastName"
               placeholder="Last Name"
               value={formData.lastName}
               onChange={handleChange}
             />
             <div className="input-checkbox-wrapeer">
-            <input
-              name="lastName"
-              type="checkbox"
-              onChange={handleChange}
-            />
-            <label>Phone</label>
-            <input
-              name="phoneNumber"
-              placeholder="Phone (optional)"
-              value={formData.phoneNumber}
-              onChange={handleChange}
-            />
+            <div className="label">
+              <input name="lastName" type="checkbox" onChange={handleChange} />
+              <label>Phone</label>
+              </div>
+              
+              <input
+                className="input"
+                name="phoneNumber"
+                placeholder="Phone (optional)"
+                value={formData.phoneNumber}
+                onChange={handleChange}
+              />
             </div>
-            
           </div>
         </div>
         <div className="form-select">

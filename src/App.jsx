@@ -1,14 +1,12 @@
-
-import './App.css'
-import SupervisorForm from './components'
+import "./App.css";
+import SupervisorForm from "./components/form";
 
 function App() {
-
   return (
     <>
-      <SupervisorForm/>
+      <SupervisorForm />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,12 +1,25 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run a Node.js project, follow these steps:
 
-Currently, two official plugins are available:
+Navigate to the project directory: Open your terminal or command prompt and use the cd command to navigate to the root directory of the project, which is "coding_challenge".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Install dependencies:
 
-## Expanding the ESLint configuration
+Run the command npm install. This will install all the necessary dependencies in the package.json file inside the node_modules directory.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Run the application:
+
+Then you can directly run the main application file (e.g, server.js) using the command "node server.js".
+
+Access the application: Once the server starts, you can access the application in your web browser or using tools like Postman, typically at http://localhost: (e.g., http://localhost:3000).
+
+#FRONTEND CODE
+
+To run an existing React.js project, the following steps can be followed: Navigate to the project directory: Open your terminal or command prompt and use the cd command to navigate to the root directory of your React project. Code cd coding_challenge_frontend
+
+Install dependencies: Run the following command to install all the necessary packages and libraries specified in the package.json file. Code npm install
+
+THEN TO START THE PROJECT, YOU RUN THE FOLLOWING COMMAND npm run dev
+
+This will usually open your React application in a new browser tab at http://localhost:5173. If port 5173 is already in use, it might run on a different port, which will be displayed in the terminal.

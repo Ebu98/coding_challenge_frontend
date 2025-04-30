@@ -16,20 +16,26 @@ const SupervisorForm = () => {
         <div className="form">
           <div className="formd">
             <input
-              className="input"
+              className="input2"
               name="firstName"
               placeholder="First Name"
               value={formData.firstName}
               onChange={handleChange}
             />
             {errors.firstName && <p className="error">{errors.firstName}</p>}
-            <h4>How would you prefer to be notified?</h4>
+            <h4 className="quastion-notify">
+              How would you prefer to be notified?
+            </h4>
             <div className="input-checkbox-wrapeer">
               <div className="label">
-              <input name="lastName" type="checkbox" onChange={handleChange} />
-              <label>Email</label>
+                <input
+                  name="lastName"
+                  type="checkbox"
+                  onChange={handleChange}
+                />
+                <label>Email</label>
               </div>
-              
+
               <input
                 className="input"
                 name="email"
@@ -41,7 +47,6 @@ const SupervisorForm = () => {
           </div>
 
           <div className="formd2">
-            {errors.lastName && <p className="error">{errors.lastName}</p>}
             <input
               className="input"
               name="lastName"
@@ -49,12 +54,17 @@ const SupervisorForm = () => {
               value={formData.lastName}
               onChange={handleChange}
             />
+            {errors.lastName && <p className="error ">{errors.lastName}</p>}
             <div className="input-checkbox-wrapeer">
-            <div className="label">
-              <input name="lastName" type="checkbox" onChange={handleChange} />
-              <label>Phone</label>
+              <div className="label">
+                <input
+                  name="lastName"
+                  type="checkbox"
+                  onChange={handleChange}
+                />
+                <label>Phone</label>
               </div>
-              
+
               <input
                 className="input"
                 name="phoneNumber"
